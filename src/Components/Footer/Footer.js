@@ -29,7 +29,7 @@ const Footer = () => {
           <div className="clear" />
           <div className={`${FooterStyles.m7r2} text-white mt-5`}>
             Copyright ©2020 All rights reserved | This template is made with <span className={FooterStyles.heart}>♡</span> by
-            <span> Colorlib</span>
+            <span> Colorlib MAYUR AGARWAL</span>
           </div>
         </div>
       </div>
