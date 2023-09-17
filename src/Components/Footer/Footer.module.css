@@ -1,0 +1,33 @@
+.m7 {
+	background-color: #04091e;
+}
+
+.m7_rows {
+	width: 74vw;
+}
+
+.m7r1_c1 {
+	width: 440px;
+}
+
+.m7r1_c1 p {
+	line-height: 22px;
+}
+
+.m7r1_c2 input {
+	width: 350px;
+	height: 30px;
+	padding-left: 15px;
+}
+
+.m7r1_c3 p {
+	font-size: 14px;
+}
+
+.m7r2 span {
+	color: #d1ab7f;
+}
+
+.heart{
+  font-size: 20px;
+}

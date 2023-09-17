@@ -1,0 +1,37 @@
+.m4_rows {
+	width: 74vw;
+}
+
+.m4_left {
+	max-width: 500px;
+}
+
+.m4c1_r1 {
+	color: #d1ab7f;
+	letter-spacing: 2px;
+}
+
+.m4c1_r2 {
+	width: 75%;
+}
+
+.m4c1_r4 {
+	color: #777777;
+}
+
+.getStartedBtn_black {
+  transition: all ease 0.2s;
+}
+
+.getStartedBtn_black:hover {
+  color: #222222;
+  background-color: transparent;
+}
+
+.play_image {
+	width: 555px;
+	height: 330px;
+	background-image: url('../../Images/video-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,10 @@
+.getStartedBtn {
+  background-color: #d1ab7f;
+  border: 1px solid #d1ab7f;
+  transition: all ease 0.2s;
+}
+
+.getStartedBtn:hover {
+  color: #d1ab7f;
+  background-color: transparent;
+}

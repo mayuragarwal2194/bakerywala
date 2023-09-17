@@ -1,0 +1,8 @@
+.header_social a {
+	transition: all ease 0.2;
+	font-size: 12px;
+}
+
+.header_social a:hover {
+	color: #d1ab7f;
+}
