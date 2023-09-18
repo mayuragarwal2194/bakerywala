@@ -1,0 +1,19 @@
+.bakery-slider .owl-theme .owl-dots .owl-dot span{
+  border-radius: 0 !important;
+}
+
+.bakery-slider .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background-color: #d1ab7f;
+}
+
+.bakery-slider .item img{
+  width: 60px !important;
+}
+
+.bakery-slider .orangeStar{
+  color: orange;
+}
+
+.bakery-slider .owl-theme .owl-nav.disabled + .owl-dots{
+  margin-top: 50px;
+}
