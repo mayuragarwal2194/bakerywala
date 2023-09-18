@@ -9,7 +9,7 @@ const Croissant = () => {
       <div className={`${CroissantStyles.m2} w-full flex relative py-28`}>
         <div className={CroissantStyles.m2c1}>
           <div className={CroissantStyles.m2c1_r1}>BRAND NEW APP TO BLOW YOUR MIND</div>
-          <div className={`${CroissantStyles.m2c1_r2} font-bold mt-5`}>
+          <div className={`${CroissantStyles.m2c1_r2} font-semibold mt-5`}>
             We’ve baked every item from the core of our
             <br /> heart to serve you
           </div>

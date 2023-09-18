@@ -16,6 +16,10 @@ import Orange_Button from '../../Components/Orange_Button/Orange_Button';
 import Play from '../../Components/Play/Play';
 import Footer from '../../Components/Footer/Footer';
 import Social_buttons from '../../Components/Social_Buttons/Social_buttons';
+import Review from '../../Components/Review/Review';
+
+import { FaRegHeart } from "react-icons/fa";
+import { FaRegComment } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -50,10 +54,10 @@ const Home = () => {
         <section className='croissant-section'>
           <Croissant />
         </section>
-        <section className='Category-section'>
+        <section className='category-section'>
           <div className="m3 w-full py-28">
             <div className="m3-rows m-auto text-center">
-              <div className="m3-head text-4xl font-bold text-black">Category of available items</div>
+              <div className="m3-head text-4xl font-semibold text-black">Category of available items</div>
               <div className="m3-r1 text-sm mt-4">
                 They are grilling celebrities in their own right.
               </div>
@@ -99,84 +103,112 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className='Play-section'>
+        <section className='play-section'>
           <Play />
         </section>
-        <div className="m5">
-          <div className="m5-trans">
-            <div className="m5-head">Enjoy our Client’s Review</div>
-            <div className="m5-r1">
-              Who are in extremely love with eco friendly system.
-            </div>
-          </div>
-        </div>
-        <div className="clear" />
-        <div className="m6">
-          <div className="m6-rows">
-            <div className="m6-head">Latest Posts From Our Blog</div>
-            <div className="m6-r1">
-              Do you want to share your love of cheese fondue with your children? Or
-              did you just find out that one of your fondue party guests doesn’t drink
-              alcohol.
-            </div>
-            <div className="m6-r2">
-              <div className="m6r2-c1">
-                <img src={b1} width={350} height={210} />
-                <div className="m6r2-c1r1">
-                  <img src={user} width={30} height={30} />
-                  <span>Mark Wiens</span>
-                </div>
-                <div className="m6r2-c1r2">
-                  STOCKING YOUR RESTAURANT
-                  <br /> KITCHEN FINDING RELIABLE SELLERS
-                </div>
-                <div className="m6r2-c1r3">
-                  Saving money – is something we would all like to do. Whether you are
-                  struggling to manage day to day or earning a six figure salary,
-                  saving is something we all think about.
-                </div>
-              </div>
-              <div className="m6r2-c2">
-                <img src={b2} width={350} height={210} />
-                <div className="m6r2-c2r1">
-                  <img src={user} width={30} height={30} />
-                  <span>Mark Wiens</span>
-                </div>
-                <div className="m6r2-c2r2">
-                  COOKING FOR SPECIAL OCCASIONS
-                  <br /> COOKWARE IN THE BRICK AND MORTR
-                </div>
-                <div className="m6r2-c2r3">
-                  Let’s talk about meat fondue recipes and what you need to know
-                  first. Meat fondue also known as oil fondue is a method of cooking
-                  all kinds of meats, poultry, and seafood in a pot of heated oil.
-                </div>
-              </div>
-              <div className="m6r2-c2">
-                <img src={b3} width={350} height={210} />
-                <div className="m6r2-c2r1">
-                  <img src={user} width={30} height={30} />
-                  <span>Mark Wiens</span>
-                </div>
-                <div className="m6r2-c2r2">
-                  WHEN YOUR MEAL BITES BACK TIPS
-                  <br /> FOR AVOIDING FOOD POISONING
-                </div>
-                <div className="m6r2-c2r3">
-                  While some people really seem to have a knack for barbequing –
-                  always grilling up a perfect meal – for the rest of us, it is
-                  something that must be learned, not something that just comes
-                  naturally. Believe it or not, there is technique involved.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="clear" />
-        <section className='Footer-Section'>
-          <Footer />
+        <section className='review-section'>
+          <Review />
         </section>
-        <div className="clear" />
+        <section className='blog-section'>
+          <div className="m6 w-100">
+            <div className="blog-rows m-auto text-center py-28">
+              <div className="blog-head text-4xl font-bold">Latest Posts From Our Blog</div>
+              <div className="blog-description m-auto mt-7 text-sm">
+                Do you want to share your love of cheese fondue with your children? Or
+                did you just find out that one of your fondue party guests doesn’t drink
+                alcohol.
+              </div>
+              <div className="blog-cards flex mt-20">
+                <div className="card">
+                  <div className="card-image">
+                    <img src={b1} className='dish-image' />
+                  </div>
+                  <div className="blog-user flex items-center justify-between py-2">
+                    <div className='flex items-center'>
+                      <img src={user} />
+                      <span className='text-sm pl-3'>Mark Wiens</span>
+                    </div>
+                    <div className='blog-posting-info font-light text-sm flex items-center gap-3'>
+                      <div>13th Dec</div>
+                      <div className='flex items-center gap-1'>
+                        <FaRegHeart /> 15
+                      </div>
+                      <div className='flex items-center gap-1'>
+                        <FaRegComment /> 04
+                      </div>
+                    </div>
+                  </div>
+                  <div className="card-body text-left">
+                    <h5 className="card-title font-semibold mt-8 text-lg">
+                      STOCKING YOUR RESTAURANT KITCHEN FINDING RELIABLE SELLERS
+                    </h5>
+                    <div className="card-description mt-4 text-sm font-light">
+                      Saving money – is something we would all like to do. Whether you are
+                      struggling to manage day to day or earning a six figure salary,
+                      saving is something we all think about.
+                    </div>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="card-image">
+                    <img src={b2} className='dish-image' />
+                  </div>
+                  <div className="blog-user flex items-center justify-between py-2">
+                    <div className='flex items-center'>
+                      <img src={user} />
+                      <span className='text-sm pl-3'>Mark Wiens</span>
+                    </div>
+                    <div className='blog-posting-info font-light text-sm flex items-center gap-3'>
+                      <div>13th Dec</div>
+                      <div className='flex items-center gap-1'>
+                        <FaRegHeart /> 15
+                      </div>
+                      <div className='flex items-center gap-1'>
+                        <FaRegComment /> 04
+                      </div>
+                    </div>
+                  </div>
+                  <div className="card-body text-left">
+                    <h5 className="card-title font-semibold mt-8 text-lg">
+                      Cooking For Special Occasions Cookware In The Brick And Mortr
+                    </h5>
+                    <div className="card-description mt-4 text-sm font-light">
+                      Let’s talk about meat fondue recipes and what you need to know first. Meat fondue also known as oil fondue is a method of cooking all kinds of meats, poultry, and seafood in a pot of heated oil.
+                    </div>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="card-image">
+                    <img src={b3} className='dish-image' />
+                  </div>
+                  <div className="blog-user flex items-center justify-between py-2">
+                    <div className='flex items-center'>
+                      <img src={user} />
+                      <span className='text-sm pl-3'>Mark Wiens</span>
+                    </div>
+                    <div className='blog-posting-info font-light text-sm flex items-center gap-3'>
+                      <div>13th Dec</div>
+                      <div className='flex items-center gap-1'>
+                        <FaRegHeart /> 15
+                      </div>
+                      <div className='flex items-center gap-1'>
+                        <FaRegComment /> 04
+                      </div>
+                    </div>
+                  </div>
+                  <div className="card-body text-left">
+                    <h5 className="card-title font-semibold mt-8 text-lg">
+                      When Your Meal Bites Back Tips For Avoiding Food Poisoning
+                    </h5>
+                    <div className="card-description mt-4 text-sm font-light">
+                      While some people really seem to have a knack for barbequing – always grilling up a perfect meal – for the rest of us, it is something that must be learned, not something that just comes naturally. Believe it or not, there is technique involved.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
     </>

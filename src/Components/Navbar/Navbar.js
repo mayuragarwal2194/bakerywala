@@ -1,7 +1,7 @@
 import React from 'react';
 import navStyles from './Navbar.module.css'
 import logoImg from '../../Images/logo.png';
-import About from '../../Pages/AboutUs/About';
+import { Outlet, Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -11,18 +11,23 @@ const Navbar = () => {
           <img src={logoImg} width={126} height={60} />
         </div>
         <ul className='font-semibold flex'>
-          <li className='ps-5 cursor-pointer'>HOME</li>
-          <li className='ps-5 cursor-pointer'>ABOUT</li>
-          <li className='ps-5 cursor-pointer'>MENU</li>
-          <li className='ps-5 cursor-pointer'>TEAM</li>
-          <li className='ps-5 cursor-pointer'>
-            <select>
-              <option value="">BLOG</option>
-            </select>
+          <li className='ps-5 cursor-pointer font-medium'>
+            <Link to='/'>HOME</Link>
           </li>
-          <li className='ps-5 cursor-pointer'>ELEMENTS</li>
-          <li className='ps-5 cursor-pointer'>CONTACT</li>
+          <li className='ps-5 cursor-pointer font-medium'>
+            <Link to='/about'>ABOUT</Link>
+          </li>
+          <li className='ps-5 cursor-pointer font-medium'>
+            <Link to='/menu'>MENU</Link>
+          </li>
+          <li className='ps-5 cursor-pointer font-medium'>
+            <Link to='/team'>TEAM</Link>
+          </li>
+          <li className='ps-5 cursor-pointer font-medium'>
+            <Link to='/contact'>CONTACT</Link>
+          </li>
         </ul>
+        <Outlet />
       </div>
     </>
   )

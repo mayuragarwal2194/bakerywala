@@ -1,13 +1,14 @@
 import React from 'react';
 import FooterStyles from './Footer.module.css'
 import Social_buttons from '../Social_Buttons/Social_buttons';
+import { FaArrowRight } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <>
       <div className={`${FooterStyles.m7} w-full`}>
         <div className={`${FooterStyles.m7_rows} py-28 m-auto`}>
-          <div className={`${FooterStyles.m7r1} text-white flex items-center justify-between`}>
+          <div className={`${FooterStyles.m7r1} text-white flex justify-between`}>
             <div className={FooterStyles.m7r1_c1}>
               <h4 className={`text-lg`}>About Us</h4>
               <p className={`text-sm mt-6`}>
@@ -18,7 +19,12 @@ const Footer = () => {
             <div className={FooterStyles.m7r1_c2}>
               <h4>Newsletter</h4>
               <p className={`text-sm mt-6 mb-4`}>Stay update with our latest</p>
-              <input type="text" placeholder="Email Address" />
+              <div className='flex items-center'>
+                <input className='pl-4 py-2' type="text" placeholder="Email Address" />
+                <button className={`${FooterStyles.sendBtn} py-3 px-3`}>
+                  <FaArrowRight />
+                </button>
+              </div>
             </div>
             <div className={FooterStyles.m7r1_c3}>
               <h4 className='mb-5'>Follow Us</h4>
@@ -27,8 +33,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="clear" />
-          <div className={`${FooterStyles.m7r2} text-white mt-5`}>
-            Copyright ©2020 All rights reserved | This template is made with <span className={FooterStyles.heart}>♡</span> by
+          <div className={`${FooterStyles.m7r2} text-white mt-5 text-sm`}>
+            Copyright ©2020 All rights reserved | This template is made with <span className={`${FooterStyles.heart} text-xl`}>♡</span> by
             <span> Colorlib</span>
           </div>
         </div>
