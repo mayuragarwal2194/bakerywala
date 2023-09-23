@@ -9,9 +9,25 @@ import { FaStar } from "react-icons/fa";
 import clientImage from '../../../Images/r1.png'
 
 const Slider = () => {
+  const options = {
+    responsiveClass: true,
+    autoplay: false,
+    smartSpeed: 1000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 1,
+      },
+      992: {
+        items: 2,
+      },
+    },
+  };
   return (
     <div className='bakery-slider mt-10'>
-      <OwlCarousel className='owl-theme' loop margin={10} items={2}>
+      <OwlCarousel className='owl-theme' loop margin={10} {...options}>
         <div className='item text-left'>
           <img src={clientImage} alt="client1-image" />
           <div className="client_name flex items-center mt-5">

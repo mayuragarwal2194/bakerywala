@@ -8,7 +8,7 @@ const Footer = () => {
     <>
       <div className={`${FooterStyles.m7} w-full`}>
         <div className={`${FooterStyles.m7_rows} py-28 m-auto`}>
-          <div className={`${FooterStyles.m7r1} text-white flex justify-between`}>
+          <div className={`${FooterStyles.m7r1} text-white lg:flex justify-between`}>
             <div className={FooterStyles.m7r1_c1}>
               <h4 className={`text-lg`}>About Us</h4>
               <p className={`text-sm mt-6`}>
@@ -32,7 +32,6 @@ const Footer = () => {
               <Social_buttons />
             </div>
           </div>
-          <div className="clear" />
           <div className={`${FooterStyles.m7r2} text-white mt-5 text-sm`}>
             Copyright ©2020 All rights reserved | This template is made with <span className={`${FooterStyles.heart} text-xl`}>♡</span> by
             <span> Colorlib</span>

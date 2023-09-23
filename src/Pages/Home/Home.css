@@ -1,7 +1,8 @@
 .m1 {
 	width: 100%;
-	background: url(../../Images/banner-bg.jpg)no-repeat fixed;
+	background: url(../../Images/banner-bg.jpg)center;
 	background-size: cover;
+	background-attachment: fixed;
 	font-family: "Poppins", sans-serif;
 }
 
@@ -138,4 +139,19 @@
 
 .card-description {
 	color: #777777;
+}
+
+
+@media (max-width:576px) {
+	.m1-content{
+		width: 100%;
+	}
+
+	.m3-rows{
+		width: 100%;
+	}
+
+	.blog-cards .card-image{
+		width: 100%;
+	}
 }

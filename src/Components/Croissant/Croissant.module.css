@@ -5,7 +5,6 @@
 
 .m2c1_r1 {
   color: #d1ab7f;
-  font-size: 14px;
 }
 
 .m2c1_r2 {
@@ -18,4 +17,11 @@
   font-size: 14px;
   line-height: 22px;
   color: #777777;
+}
+
+@media (max-width:576px) {
+  .m2c1 {
+    width: 100%;
+    margin-left: unset;
+  }
 }

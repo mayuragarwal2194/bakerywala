@@ -20,6 +20,7 @@ import Review from '../../Components/Review/Review';
 
 import { FaRegHeart } from "react-icons/fa";
 import { FaRegComment } from "react-icons/fa";
+import Header_Top from '../../Components/Header/Header_Top/Header_Top';
 
 const Home = () => {
   return (
@@ -29,18 +30,12 @@ const Home = () => {
           <div className="m1">
             <div className="m1-transparent">
               <div className='m1-content m-auto pb-40'>
-                <div className={`header flex items-center justify-between px-4 py-5 text-white`}>
-                  <Social_buttons />
-                  <div className="header-c2 flex items-center justify-center gap-7">
-                    <div className="header-no">+953 012 3654 896</div>
-                    <div className="header-site">support@colorlib.com</div>
-                  </div>
-                </div>
+                <Header_Top />
                 <Navbar />
                 <div className="m1-rows home-m1-rows text-center mt-16 text-white">
                   <div className="m1r1">WHENEVER WE BAKE, BAKE WITH OUR HEART</div>
-                  <div className="m1r2 m-auto text-7xl py-2 font-bold mt-5 border-y">Love with baking items</div>
-                  <div className="m1r3 m-auto mt-5 text-sm">
+                  <div className="m1r2 m-auto sm:text-2xl lg:text-7xl py-2 font-bold mt-5 border-y">Love with baking items</div>
+                  <div className="m1r3 m-auto mt-5 sm:font-light text-sm">
                     Since Americans in the South began roasting pigs publicly, Barbecues
                     have been a staple of North American living. For many, grilling
                     becomes a routine mealtime activity.
@@ -61,7 +56,7 @@ const Home = () => {
               <div className="m3-r1 text-sm mt-4">
                 They are grilling celebrities in their own right.
               </div>
-              <div className="m3-r2 flex mt-24 justify-between mb-20">
+              <div className="m3-r2 flex sm:items-center sm:flex-col lg:flex-row sm:gap-10 lg:gap-0 mt-24 justify-between mb-20">
                 <div className="category-cards flex flex-col items-center justify-center">
                   <div className="category-card-image">
                     <img className='w-full h-full object-cover rounded-full' src={c1} />
@@ -106,7 +101,7 @@ const Home = () => {
         <section className='play-section'>
           <Play />
         </section>
-        <section className='review-section'>
+        <section className='review-section px-4 lg:px-0'>
           <Review />
         </section>
         <section className='blog-section'>
@@ -118,7 +113,7 @@ const Home = () => {
                 did you just find out that one of your fondue party guests doesn’t drink
                 alcohol.
               </div>
-              <div className="blog-cards flex mt-20">
+              <div className="blog-cards lg:flex mt-20">
                 <div className="card">
                   <div className="card-image">
                     <img src={b1} className='dish-image' />

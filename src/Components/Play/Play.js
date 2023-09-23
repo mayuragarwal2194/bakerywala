@@ -6,7 +6,7 @@ const Play = () => {
   return (
     <>
       <div className={`w-full`}>
-        <div className={`${PlayStyles.m4_rows} m-auto py-28 flex items-center justify-between`}>
+        <div className={`${PlayStyles.m4_rows} m-auto py-28 sm:block lg:flex px-4 items-center justify-between`}>
           <div className={PlayStyles.m4_left}>
             <div className={`${PlayStyles.m4c1_r1} text-xs`}>BRAND NEW APP TO BLOW YOUR MIND</div>
             <div className={`${PlayStyles.m4c1_r2} text-4xl font-bold mt-5`}>We’ve made a life that will change you</div>
@@ -21,7 +21,7 @@ const Play = () => {
               Get Started Now
             </button>
           </div>
-          <div className={`${PlayStyles.play_image} flex items-center justify-center`}>
+          <div className={`${PlayStyles.play_image} flex items-center justify-center mt-8`}>
             <img src={playBtn} />
           </div>
         </div>
