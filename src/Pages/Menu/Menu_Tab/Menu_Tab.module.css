@@ -1,0 +1,23 @@
+.tab ul li {
+  transition: all ease 0.2s;
+}
+
+.tab ul li:hover {
+  background-color: #d1ab7f;
+  color: #ffffff;
+}
+
+.content{
+  display: none;
+}
+
+.showContent{
+  display: block;
+}
+
+.active{
+  padding: 8px 32px;
+  border-radius: 4px;
+  background-color: #d1ab7f !important;
+  color: #ffffff;
+}
