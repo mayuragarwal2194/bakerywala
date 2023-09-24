@@ -6,10 +6,10 @@ import Orange_Button from '../Orange_Button/Orange_Button';
 const Croissant = () => {
   return (
     <>
-      <div className={`${CroissantStyles.m2} w-full flex relative py-28`}>
+      <div className={`${CroissantStyles.m2} w-full flex relative py-28 sm:px-4 lg:px-0`}>
         <div className={CroissantStyles.m2c1}>
-          <div className={CroissantStyles.m2c1_r1}>BRAND NEW APP TO BLOW YOUR MIND</div>
-          <div className={`${CroissantStyles.m2c1_r2} font-bold mt-5`}>
+          <div className={`${CroissantStyles.m2c1_r1} sm:text-xs lg:text-sm`}>BRAND NEW APP TO BLOW YOUR MIND</div>
+          <div className={`${CroissantStyles.m2c1_r2} font-semibold mt-5`}>
             We’ve baked every item from the core of our
             <br /> heart to serve you
           </div>
@@ -26,7 +26,7 @@ const Croissant = () => {
           </div>
           <Orange_Button BtnName={`Get Started Now`} />
         </div>
-        <div className={`${CroissantStyles.m2c2} absolute right-0`}>
+        <div className={`sm:hidden lg:block absolute right-0`}>
           <img src={aboutImg} width={600} height={340} />
         </div>
       </div>
