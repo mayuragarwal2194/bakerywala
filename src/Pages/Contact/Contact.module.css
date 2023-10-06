@@ -1,0 +1,19 @@
+.icon{
+  font-size: 30px;
+  font-weight: 100;
+  color: #d1ab7f;
+}
+
+.contact_details{
+  color: #222222;
+}
+
+ul li span{
+  font-size: 14px;
+  color: #777777;
+}
+
+input, textarea{
+  border: 1px solid #ced4da;
+  color: #495057;
+}

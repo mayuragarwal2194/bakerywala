@@ -6,6 +6,7 @@ import Team from './Pages/Team/Team';
 import Contact from './Pages/Contact/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
+import Error from './Pages/Error/Error';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path='/menu' element={<Menu />} />
             <Route path='/team' element={<Team />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='*' element={<Error />} />
           </Routes>
           <Footer />
         </Router>

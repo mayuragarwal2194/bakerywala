@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <div className={`${FooterStyles.m7} w-full`}>
-        <div className={`${FooterStyles.m7_rows} py-28 m-auto`}>
+        <div className={`content-width py-28 m-auto`}>
           <div className={`${FooterStyles.m7r1} text-white lg:flex justify-between`}>
             <div className={FooterStyles.m7r1_c1}>
               <h4 className={`text-lg`}>About Us</h4>
@@ -20,8 +20,8 @@ const Footer = () => {
               <h4>Newsletter</h4>
               <p className={`text-sm mt-6 mb-4`}>Stay update with our latest</p>
               <div className='flex items-center'>
-                <input className='pl-4 py-2' type="text" placeholder="Email Address" />
-                <button className={`${FooterStyles.sendBtn} py-3 px-3`}>
+                <input className='pl-4 py-2 font-light' type="text" placeholder="Email Address" />
+                <button className={`${FooterStyles.sendBtn} py-3 px-3 text-lg`}>
                   <FaArrowRight />
                 </button>
               </div>

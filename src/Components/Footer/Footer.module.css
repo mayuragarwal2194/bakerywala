@@ -2,9 +2,9 @@
 	background-color: #04091e;
 }
 
-.m7_rows {
+/* .m7_rows {
 	width: 74vw;
-}
+} */
 
 .m7r1_c1 {
 	max-width: 440px;
@@ -16,6 +16,11 @@
 
 .m7r1_c2 input {
 	width: 350px;
+	color: #495057;
+}
+
+.m7r1_c2 input:focus-visible{
+	outline: none !important;
 }
 
 .sendBtn{

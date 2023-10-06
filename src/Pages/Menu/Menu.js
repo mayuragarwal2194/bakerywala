@@ -9,7 +9,7 @@ const Menu = () => {
     <>
       <Header pageName={`Menu List`}/>
       <div className={`${menuStyles.menu_main}`}>
-        <div className={`${menuStyles.menu_content} py-28`}>
+        <div className={`content-width py-28`}>
           <Menu_Tab />
         </div>
       </div>

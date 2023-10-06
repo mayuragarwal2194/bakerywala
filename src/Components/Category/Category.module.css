@@ -1,0 +1,41 @@
+.m3 {
+	background-color: #f9f9ff;
+}
+
+.m3_rows {
+	width: 74vw;
+}
+
+.m3_head{
+	color: #222222;
+}
+
+.m3_r1 {
+	color: #777777;
+}
+
+.category_cards {
+	width: 260px;
+	color: #777777;
+}
+
+.category_card_image {
+	width: 180px;
+	height: 180px;
+}
+
+.category_card_image img {
+	transition: all ease 0.5s;
+}
+
+.category_cards:hover .category_card_image img {
+	scale: 1.1;
+}
+
+.category_cards:hover .category_card_title {
+	color: #d1ab7f;
+}
+
+.category_card_title {
+	transition: all ease 0.5s;
+}

@@ -1,0 +1,8 @@
+.getStartedBtn_black {
+	transition: all ease 0.2s;
+}
+
+.getStartedBtn_black:hover {
+	color: #222222;
+	background-color: transparent;
+}

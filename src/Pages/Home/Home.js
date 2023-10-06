@@ -1,10 +1,7 @@
 import React from 'react';
 import './Home.css';
 
-import c1 from '../../Images/c1.jpg';
-import c2 from '../../Images/c2.jpg';
-import c3 from '../../Images/c3.jpg';
-import c4 from '../../Images/c4.jpg';
+
 import b1 from '../../Images/b1.jpg';
 import b2 from '../../Images/b2.jpg';
 import b3 from '../../Images/b3.jpg';
@@ -14,13 +11,12 @@ import Croissant from '../../Components/Croissant/Croissant';
 import Orange_Button from '../../Components/Orange_Button/Orange_Button';
 
 import Play from '../../Components/Play/Play';
-import Footer from '../../Components/Footer/Footer';
-import Social_buttons from '../../Components/Social_Buttons/Social_buttons';
 import Review from '../../Components/Review/Review';
 
 import { FaRegHeart } from "react-icons/fa";
 import { FaRegComment } from "react-icons/fa";
 import Header_Top from '../../Components/Header/Header_Top/Header_Top';
+import Category from '../../Components/Category/Category';
 
 const Home = () => {
   return (
@@ -50,53 +46,7 @@ const Home = () => {
           <Croissant />
         </section>
         <section className='category-section'>
-          <div className="m3 w-full py-28">
-            <div className="m3-rows m-auto text-center">
-              <div className="m3-head text-4xl font-semibold text-black">Category of available items</div>
-              <div className="m3-r1 text-sm mt-4">
-                They are grilling celebrities in their own right.
-              </div>
-              <div className="m3-r2 flex sm:items-center sm:flex-col lg:flex-row sm:gap-10 lg:gap-0 mt-24 justify-between mb-20">
-                <div className="category-cards flex flex-col items-center justify-center">
-                  <div className="category-card-image">
-                    <img className='w-full h-full object-cover rounded-full' src={c1} />
-                  </div>
-                  <div className="category-card-title text-black font-bold mb-5 text-lg mt-3">Pizza</div>
-                  <div className="card-body text-sm">
-                    inappropriate behavior is often laughed off as “boys will be.
-                  </div>
-                </div>
-                <div className="category-cards flex flex-col items-center justify-center">
-                  <div className="category-card-image">
-                    <img className='w-full h-full object-cover rounded-full' src={c2} />
-                  </div>
-                  <div className="category-card-title text-black font-bold mb-5 text-lg mt-3">Bread</div>
-                  <div className="card-body text-sm">
-                    inappropriate behavior is often laughed off as “boys will be.
-                  </div>
-                </div>
-                <div className="category-cards flex flex-col items-center justify-center">
-                  <div className="category-card-image">
-                    <img className='w-full h-full object-cover rounded-full' src={c3} />
-                  </div>
-                  <div className="category-card-title text-black font-bold mb-5 text-lg mt-3">Burgers</div>
-                  <div className="card-body text-sm">
-                    inappropriate behavior is often laughed off as “boys will be.
-                  </div>
-                </div>
-                <div className="category-cards flex flex-col items-center justify-center">
-                  <div className="category-card-image">
-                    <img className='w-full h-full object-cover rounded-full' src={c4} />
-                  </div>
-                  <div className="category-card-title text-black font-bold mb-5 text-lg mt-3">Chicken</div>
-                  <div className="card-body text-sm">
-                    inappropriate behavior is often laughed off as “boys will be.
-                  </div>
-                </div>
-              </div>
-              <Orange_Button BtnName='View Full Menu' />
-            </div>
-          </div>
+          <Category />
         </section>
         <section className='play-section'>
           <Play />
@@ -107,8 +57,10 @@ const Home = () => {
         <section className='blog-section'>
           <div className="m6 w-100">
             <div className="blog-rows m-auto text-center py-28">
-              <div className="blog-head text-4xl font-bold">Latest Posts From Our Blog</div>
-              <div className="blog-description m-auto mt-7 text-sm">
+              <div className="blog-head text-4xl font-semibold">
+                Latest Posts From Our Blog
+              </div>
+              <div className="blog-description m-auto mt-7 text-sm font-light ">
                 Do you want to share your love of cheese fondue with your children? Or
                 did you just find out that one of your fondue party guests doesn’t drink
                 alcohol.
