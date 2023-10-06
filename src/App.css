@@ -11,3 +11,40 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+
+.content-width {
+  width: 74vw;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: auto;
+}
+
+@media (max-width:575px) {
+  .content-width {
+    width: 100%;
+  }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+  .content-width {
+    max-width: 540px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .content-width {
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+  .content-width {
+    max-width: 960px;
+  }
+}
+
+/* @media (min-width:1200px) and (max-width:1399px) {
+  .content-width {
+    max-width: 1140px;
+  }
+} */

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import navStyles from './Navbar.module.css'
 import logoImg from '../../Images/logo.png';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, Link, NavLink } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa'
 import {AiOutlineClose} from 'react-icons/ai'
 
@@ -11,7 +11,9 @@ const Navbar = () => {
     <>
       <div className={`${openMenu ? navStyles.active : navStyles.nevbar} bg-white m-auto flex items-center justify-between py-3 px-5`} id="navbar">
         <div className={navStyles.logo}>
-          <img src={logoImg} width={126} height={60} />
+          <NavLink to='/'>
+            <img src={logoImg} width={126} height={60} />
+          </NavLink>
         </div>
         <ul className={`${navStyles.navbar_list} font-semibold flex`}>
           <li className='ps-5 cursor-pointer font-medium'>
